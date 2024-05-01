@@ -50,7 +50,7 @@ export function Chat() {
                                 </li>
                             ) : (
                                 <li key={m.id} className="flex flex-row-reverse">
-                                    <div className="rounded-xl p-4 bg-background shadow-md flex w-3/4">
+                                    <div className="rounded-xl p-4 bg-primary shadow-md flex w-3/4">
                                         <p className="text-primary">{m.content}</p>
                                     </div>
                                 </li>
