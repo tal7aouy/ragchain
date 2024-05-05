@@ -30,7 +30,7 @@ export function Chat() {
 
             <section className="p-4">
                 <form onSubmit={handleSubmit} className="flex w-full max-w-3xl mx-auto items-center">
-                    <Input className="flex-1 min-h-[40px]" placeholder="Type your question here..." type="text" value={input} onChange={handleInputChange} />
+                    <Input className="flex-1 min-h-[40px]" placeholder="Send a message to start talking..." type="text" value={input} onChange={handleInputChange} />
                     <Button className="ml-2" type="submit">
                         Submit
                     </Button>
@@ -49,7 +49,7 @@ export function Chat() {
                                 </li>
                             ) : (
                                 <li key={m.id} className="flex flex-row-reverse">
-                                    <div className="rounded-xl p-4 bg-background shadow-md flex w-3/4">
+                                    <div className="rounded-xl p-4 bg-primary shadow-md flex w-3/4">
                                         <p className="text-primary">{m.content}</p>
                                     </div>
                                 </li>
